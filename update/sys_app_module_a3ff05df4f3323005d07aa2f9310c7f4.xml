@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="ServerGlideScript1">d07f0ddf4f3323005d07aa2f9310c7ff</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>ServerGlideScript1s</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_317751_servicesi_serverglidescript1</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_317751_servicesi.serverglidescript1_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 12:41:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3ff05df4f3323005d07aa2f9310c7f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServerGlideScript1s</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ServiceSideScriptApp" source="x_317751_servicesi">628589d34f3323005d07aa2f9310c73c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceSideScriptApp">628589d34f3323005d07aa2f9310c73c</sys_scope>
+        <sys_update_name>sys_app_module_a3ff05df4f3323005d07aa2f9310c7f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 12:41:21</sys_updated_on>
+        <timeline_page/>
+        <title>ServerGlideScript1s</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

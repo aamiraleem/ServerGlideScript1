@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="ServerGlideScript1" max_length="40" name="x_317751_servicesi_serverglidescript1" type="collection">
+        <element label="Other" max_length="255" name="other" type="string"/>
+    </element>
+</database>

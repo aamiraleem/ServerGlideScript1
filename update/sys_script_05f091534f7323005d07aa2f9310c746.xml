@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_317751_servicesi_serverglidescript1</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_317751_servicesi_serverglidescript1">priority=2^EQ<item endquery="false" field="priority" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Added Short Description in &#34;Other&#34; field when priority is selected as &#34;High&#34;</p>]]></message>
+        <name>Modify ServierGlideScript1 Short Descrip</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions>action_designer,activity_admin,activity_creator,admin,agent_admin,announcement_admin,api_analytics_read,approval_admin,approver_user,assessment_admin,asset,assignment_rule_admin,atf_test_admin,atf_test_designer,atf_ws_designer,bsm_legacy,bsm_legacy_admin</role_conditions>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+if(current.priority== "2"){  
+
+	
+//Script1 
+var gr = new GlideRecord('task');
+gs.info(gr.canRead());
+ 
+ current.description= current.short_description+" and the Priority is set as:"+current.priority +" gr.canRead(): "+gr.canRead(); //logic here
+}
+	
+	
+// Script 2 to check active one and display it in description field
+var rec = new GlideRecord('task');
+rec.addQuery('active', true);
+rec.query();
+	var totalrecords="Total active - Short Description\n\r";
+while (rec.next()) { 
+    gs.info('Active Number' + rec.number);
+	totalrecords=totalrecords+"Number: "+rec.number+" and Short Description "+rec.short_description+"\n";
+ 
+}
+	
+current.description=totalrecords; //logic here
+
+ 
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-28 12:49:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05f091534f7323005d07aa2f9310c746</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name>Modify ServierGlideScript1 Short Descrip</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ServiceSideScriptApp" source="x_317751_servicesi">628589d34f3323005d07aa2f9310c73c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceSideScriptApp">628589d34f3323005d07aa2f9310c73c</sys_scope>
+        <sys_update_name>sys_script_05f091534f7323005d07aa2f9310c746</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-28 15:11:28</sys_updated_on>
+        <template>state=2^otherSAMEASshort_description^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=05f091534f7323005d07aa2f9310c746"/>
+</record_update>
